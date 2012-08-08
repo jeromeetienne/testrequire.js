@@ -4,12 +4,11 @@ requirejs.config({
 			exports	: 'tQuery'
 		},
 		'tquery.superplugin1'	: ['tquery'],
-		'tquery.superplugin2'	: ['tquery']
+		'tquery.superplugin2'	: ['tquery', 'tquery.superplugin1']
 	}
 });
 
-console.log('main.js loaded')
-
+console.log('main.js loaded2')
 
 require(['tquery.superplugin2'], function(){
 	console.log('inside main.js', tQuery);
